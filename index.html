@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/count.js" defer></script>
+    <title>2022 Recap</title>
+</head>
+<body>
+    <!-- Mobile menu -->
+    <div id="overlay"></div>
+    <div id="mobile-menu" class="mobile-main-menu">
+        <ul>
+            <li><a href="trips.html">Trips</a></li>
+            <li><a href="albums.html">Albums</a></li>
+            <li><a href="video_games.html">Video Games</a></li>
+        </ul>
+    </div>
+    <header class="main-header">
+        <a href="index.html">
+            <h4 class="text-md">2022 Retrospective</h4>
+        </a>
+        <nav class="desktop-main-menu">
+            <ul>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="albums.html">Albums</a></li>
+                <li><a href="video_games.html">Video Games</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hamburger Menu -->
+    <button id="menu-btn" class="hamburger" type="button">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+    </button>
+
+    <!-- Show case image, title and subheading -->
+    <section class="showcase">
+        <div id="overlay"></div>
+        <div class="showcase-inner">
+            <h1 class="text-xl">A reflection of 2022</h1>
+            <h4 class="text-lg">A guide through 5 of my favourite things this year across 3 categories</h4>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <div class="stats">
+        <div>
+            <span class="counter" data-target="15">0</span>
+            <h4>Items</h4>
+        </div>
+        <div>
+            <span class="counter" data-target="3">0</span>
+            <h4>Topics</h4>
+        </div>
+        <div>
+            <span class="counter" data-target="1">0</span>
+            <h4>Year</h4>
+        </div>
+    </div>
+
+    <!-- Box A -->
+    <section class="box grid-col-2">
+        <img src="./img/travel-index.jpg" alt="">
+        <div class="box-text">
+            <h2 class="text-xl">Travel</h2>
+            <h4 class="text-md">I was fortunate enought to go on sveral trips this year. In this section I break down some of my favourites.</h4>
+            <a href="trips.html" class="btn">
+                <div class="hover"></div>
+                <span>View</span>
+              </a>
+        </div>
+    </section>
+
+    <!-- Box B -->
+    <section class="box grid-col-2 grid-reversed">
+        <img src="./img/music-index.jpg" alt="">
+        <div class="box-text">
+            <h2 class="text-xl">Albums</h2>
+            <h4 class="text-md">I'm always seeking out new artists to listen to whilst sticking to what I love. Here are my top LPs.</h4>
+            <a href="albums.html" class="btn">
+                <div class="hover"></div>
+                <span>View</span>
+              </a>
+        </div>
+    </section>
+    <!-- Box C -->
+    <section class="box grid-col-2">
+        <img src="./img/vg-index.JPG" alt="">
+        <div class="box-text">
+            <h2 class="text-xl">Video Games</h2>
+            <h4 class="text-md">My favourite hobby that I don't get to do often. Click below to find out what I loved playing the most this year.</h4>
+            <a href="video_games.html" class="btn">
+                <div class="hover"></div>
+                <span>View</span>
+              </a>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <ul>
+            <li>Don Haughton &copy; 2022</li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/script.js" defer></script>
+    <title>Albums 2022</title>
+</head>
+<body>
+    <!-- Mobile menu -->
+    <div id="overlay"></div>
+    <div id="mobile-menu" class="mobile-main-menu">
+        <ul>
+            <li><a href="trips.html">Trips</a></li>
+            <li><a href="albums.html">Albums</a></li>
+            <li><a href="video_games.html">Video Games</a></li>
+        </ul>
+    </div>
+    <header class="main-header">
+        <a href="index.html">
+            <h4 class="text-md">2022 Retrospective</h4>
+        </a>
+        <nav class="desktop-main-menu">
+            <ul>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="albums.html">Albums</a></li>
+                <li><a href="video_games.html">Video Games</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hamburger Menu -->
+    <button id="menu-btn" class="hamburger" type="button">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+    </button>
+    <!-- Intro section -->
+    <section class="introduction">
+        <div class="highlight bg-music">
+            <div class="introduction-inner">
+                <h1 class="text-xl">Albums</h1>
+                <h4 class="text-lg">Not the best year for music IMO. Nevertheless, here are my favourites</h4>
+            </div>
+        </div>
+    </section>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="my-slides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="/img//crash.jpeg" style="width:100%">
+        <div class="image-text">
+            <h1 class="text-xl" style="text-align:center;">Crash</h1>
+            <p class="text-md" style="text-align:center;">Charli XCX</p>
+        </div>
+        </div>
+    
+        <div class="my-slides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="/img/mrm.jpeg" style="width:100%">
+        <h1 class="text-xl" style="text-align:center;">Mr Morale & The big steppers</h1>
+            <p class="text-md" style="text-align:center;">Kendrick Lamar</p>
+        </div>
+    
+        <div class="my-slides fade">
+        <div class="numbertext">3 / 5</div>
+        <img src="/img//kd.jpeg" style="width:100%">
+        <h1 class="text-xl" style="text-align:center;">kings disease III</h1>
+            <p class="text-md" style="text-align:center;">Nas</p>
+        </div>
+
+        <div class="my-slides fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="/img//htg.jpeg" style="width:100%">
+            <h1 class="text-xl" style="text-align:center;">hold the girl</h1>
+            <p class="text-md" style="text-align:center;">Rina Sawayama</p>
+        </div>
+
+        <div class="my-slides fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="/img//cs.jpeg" style="width:100%">
+            <h1 class="text-xl" style="text-align:center;">caprisongs</h1>
+            <p class="text-md" style="text-align:center;">FKA Twigs</p>
+        </div>
+    
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <ul>
+            <li>Don Haughton &copy; 2022</li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

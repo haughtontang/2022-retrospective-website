@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/trips_script.js" defer></script>
+    <title>Trips 2022</title>
+</head>
+<body>
+    <!-- Ideas for how to display 3 different sets of lists,
+    - Tabs - same style I used for netflix
+    - Slideshow - Using images and text that fades in
+    https://www.w3schools.com/howto/howto_js_slideshow.asp
+    - List of sections - Similar to how index in space x has images as backgrounds that look like their on sections-->
+    <!-- Mobile menu -->
+    <div id="overlay"></div>
+    <div id="mobile-menu" class="mobile-main-menu">
+        <ul>
+            <li><a href="trips.html">Trips</a></li>
+            <li><a href="albums.html">Albums</a></li>
+            <li><a href="video_games.html">Video Games</a></li>
+        </ul>
+    </div>
+    <header class="main-header">
+        <a href="index.html">
+            <h4 class="text-md">2022 Retrospective</h4>
+        </a>
+        <nav class="desktop-main-menu">
+            <ul>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="albums.html">Albums</a></li>
+                <li><a href="video_games.html">Video Games</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hamburger Menu -->
+    <button id="menu-btn" class="hamburger" type="button">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+    </button>
+    <!-- Intro section -->
+    <section class="introduction">
+        <div class="highlight bg-travel">
+            <div class="introduction-inner">
+                <h1 class="text-xl">Travel</h1>
+                <h4 class="text-lg">Here are my 5 favourite trips I took this year. All come highly recommended</h4>
+            </div>
+        </div>
+    </section>
+    <!-- Section containing tabs -->
+    <section class="tabs">
+        <div class="container">
+            <div id="tab-1" class="tab-item tab-border">
+                <h4>#5</h4>
+            </div>
+            <div id="tab-2" class="tab-item">
+                <h4>#4</h4>
+            </div>
+            <div id="tab-3" class="tab-item">
+                <h4>#3</h4>
+            </div>
+            <div id="tab-4" class="tab-item">
+                <h4>#2</h4>
+            </div>
+            <div id="tab-5" class="tab-item">
+                <h4>#1</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tab content -->
+    <section class="tab-content">
+        <div class="container">
+            <!-- Tab content 1 -->
+            <div id="tab-1-content" class="tab-content-item show">
+                <!-- Using 2 divs here lets me make 2 columns of content when styling in css -->
+                <div class="tab-content-inner">
+                    <img class="tab-content-imgs" src="/img/milan.jpg" alt="">
+                    <div>
+                        <h4 class="subheading"><i>Milan (Lake Como) 🇮🇹</i></h4>
+                        <p class="tab-text">My first time in Italy which has always been a place I've wanted to visit.
+                            Sadly, Milan didn't meet my expectations. However, my excursion to Lake Como was beautiful and a place I'd love to go back to.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Tab content 2 -->
+            <div id="tab-2-content" class="tab-content-item">
+                <div class="tab-content-inner">
+                    <img class="tab-content-imgs" src="/img/barca.jpg" alt="">
+                    <div>
+                        <h4 class="subheading"><i>Barcelona 🇪🇸</i></h4>
+                        <p class="tab-text">My second time in Barcalona and one of many vists to Spain.
+                            This place has a lot of character, fun restaurants and bars, and a great atmosphere. Easily
+                            my favourite city in Spain.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Tab content 3 -->
+            <div id="tab-3-content" class="tab-content-item">
+                <div class="tab-content-inner">
+                    <img class="tab-content-imgs" src="/img/glencoe.jpg" alt="">
+                    <div>
+                        <h4 class="subheading"><i>The Highlands 🏴󠁧󠁢󠁳󠁣󠁴󠁿</i></h4>
+                        <p class="tab-text">Despite being a native, I've not explored much of my own country. 
+                            This year I rectified that and managed to spend some time hiking and exploring Glencoe and Skye.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Tab content 4 -->
+            <div id="tab-4-content" class="tab-content-item">
+                <div class="tab-content-inner">
+                    <img class="tab-content-imgs" src="/img/athens.jpg" alt="">
+                    <div>
+                        <h4 class="subheading"><i>Athens 🇬🇷</i></h4>
+                        <p class="tab-text">The greek capital did not disappoint. Despite the hot and humid weather,
+                             it was easy to enjoy learning about Greek history,
+                              trying new food and island hopping. </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Tab content 5 -->
+            <div id="tab-5-content" class="tab-content-item">
+                <div class="tab-content-inner">
+                    <img class="tab-content-imgs" src="/img/iceland.jpg" alt="">
+                    <div>
+                        <h4 class="subheading"><i>reykjavik 🇮🇸</i></h4>
+                        <p class="tab-text">A truly unique experience, well worth the high costs you face once you get there.
+                             I spent most of my time here in hot springs and I'm not complaining about it..</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <ul>
+            <li>Don Haughton &copy; 2022</li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
